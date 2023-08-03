@@ -555,10 +555,6 @@
 		font-size: 27px;
 		padding-bottom: 9px;
 	}
-	.billbord {
-		padding-top: 110px;
-		min-height: 550px;
-	}
 	.descr-big {
 		font-size: 16px;
 	}
@@ -678,6 +674,9 @@
 	}
 	.steps {
 		padding-bottom: 15px;
+	}
+	.form-steps {
+		padding: 0 25px;
 	}
 }
 
