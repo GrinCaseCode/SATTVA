@@ -679,6 +679,7 @@
 		display: none;
 		max-height: initial;
 		top: 0;
+		transition: initial;
 	}
 	.wrapper {
 		overflow: hidden;
