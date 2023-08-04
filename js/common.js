@@ -36,10 +36,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 	});
 
-	$(".menu__haschild > a").click(function(e) {
-		e.preventDefault();
-		$(this).siblings("ul").slideToggle(200);
-	});
 
 	//слайдер
 
@@ -96,6 +92,59 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		} 
 	});
 
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 3,
+				vertical: false,
+				verticalSwiping: false,
+			}
+		}
+		]
+	});
+
+	$('.tabs li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parent().parent().parent().find(".tab-pane").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
@@ -103,13 +152,21 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	 $('select').styler();
 
 	 {
-		if ($(window).width() < 992) { 
-			$(".footer__title").click(function() {
-				$(this).toggleClass("active");
-				$(this).next(".footer__content").slideToggle(200);
-			}); 
-		}
-	}
+	 	if ($(window).width() < 992) { 
+	 		$(".footer__title").click(function() {
+	 			$(this).toggleClass("active");
+	 			$(this).next(".footer__content").slideToggle(200);
+	 		}); 
+	 		$(".menu__haschild > a").click(function(e) {
+	 			e.preventDefault();
+	 			$(this).siblings("ul").slideToggle(200);
+	 		});
+	 	}
+	 }
+
+	 $(".btn-main_filter").click(function() {
+	 	$(".nav-catalog").slideToggle(200);
+	 });
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
