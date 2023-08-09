@@ -23,6 +23,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		offset: 100
 	});
 
+	$(".video-main").modalVideo();
 
 	//кнопка sandwich
 	$(".sandwich").click(function() {
@@ -133,6 +134,55 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 				verticalSwiping: false,
 			}
 		}
+		]
+	});
+
+	$('.slider-gallery').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				arrows: false,
+				dots: true,
+			}
+		},
+		]
+	});
+
+	$('.slider-sertificats').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				arrows: false,
+				dots: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				arrows: false,
+				dots: true,
+			}
+		},
 		]
 	});
 
