@@ -1668,3 +1668,223 @@ form {
 .slick-dots li.slick-active button {
 	background: #008EDE;
 }
+.page-service {
+	padding-top: 29px;
+	padding-bottom: 50px;
+}
+.page-service .title-page {
+	padding-bottom: 21px;
+}
+.service-text {
+	padding: 40px 35px;
+	padding-right: 23px;
+	padding-bottom: 35px;
+	border-radius: 8px;
+background: #F6F9FC;
+}
+.service-text strong {
+	font-weight: 500;
+}
+.page-service p {
+	margin-bottom: 20px;
+}
+.service-text p {
+	margin: 0;
+}
+.video-main_page::after {
+	display: none;
+}
+.video-main__button {
+	bottom: 19px;
+	left: 19px;
+	padding: 14px 15px;
+	padding-right: 30px;
+	color: #FFF;
+font-size: 20px;
+font-weight: 500;
+line-height: 140%;
+	display: inline-flex;
+	align-items: center;
+	position: absolute;
+	border-radius: 46px;
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(7.5px);
+}
+.video-main__icon {
+	width: 65px;
+	height: 65px;
+	margin-right: 24px;
+	flex: none;
+	border-radius: 50%;
+	background-image: url(../img/play.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.5s;
+}
+.video-main:hover .video-main__icon {
+	transform: scale(1.1);
+}
+.page-service .video-main {
+	margin-bottom: 40px;
+}
+.page-service .row {
+	margin: 0 -12px;
+}
+.page-service .row > div {
+	padding: 0 12px;
+}
+.service-text .title-middle {
+	margin-bottom: 14px;
+	font-weight: 500;
+}
+.service-text li {
+	font-size: 14px;
+	line-height: 160%;
+	padding-left: 15px;
+	position: relative;
+}
+.service-text li::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "•";
+}
+.service-text a {
+	color: #000;
+	border-bottom: 1px solid #000;
+}
+.service-text a:hover {
+	border-color: transparent;
+}
+.image-service {
+	height: 413px;
+	padding: 15px;
+	border-radius: 8px;
+border: 1px solid #D9D9D9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image-service img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.row_service-bottom .service-text {
+	padding: 19px 30px;
+}
+.row.row_service-bottom {
+	margin-top: 30px;
+}
+.form-service {
+	padding: 35px 115px;
+	border-radius: 8px;
+background: #008EDE;
+	color: #fff;
+}
+.form-service .checkbox label > span:after {
+	color: #fff;
+}
+.form-service .checkbox label > span:before {
+	border-color: #fff;
+}
+.form-service .checkbox {
+	margin-top: 0;
+}
+.form-service .btn-main {
+	margin-top: 15px;
+	height: 64px;
+	float: right;
+}
+.page-service .form-service {
+	margin-top: 50px;
+}
+.page-contacts {
+	padding-top: 29px;
+	padding-bottom: 50px;
+}
+.page-contacts .title-page {
+	padding-bottom: 21px;
+}
+.contacts-main {
+	padding: 36px 43px;
+	min-height: 100%;
+	border-radius: 8px;
+background: #F6F9FC;
+}
+.contacts-main p a {
+	color: #000;
+}
+.contacts-main .line-contacts {
+	margin-top: 22px;
+}
+.form-block {
+	padding: 26px 60px;
+	padding-bottom: 34px;
+	border-radius: 8px;
+background: #008EDE;
+text-align: center;
+color: #fff;
+}
+.form-block .title-middle {
+	margin: 0 -20px;
+	padding-bottom: 15px;
+}
+.form-block .checkbox label > span:after {
+	color: #fff;
+}
+.form-block .checkbox label > span:before {
+	border-color: #fff;
+}
+.form-block .checkbox {
+	justify-content: center;
+}
+.page-contacts #map {
+	margin-top: 50px;
+}
+.page-contacts .row {
+	margin: 0 -12px;
+}
+.page-contacts .row > div {
+	padding: 0 12px;
+}
+.form-block .btn-main {
+	width: 100%;
+	padding: 0 10px;
+	margin-top: 20px;
+}
+.form-block .item-form {
+    margin-bottom: 22px;
+}
+.page-error {
+	background: linear-gradient(155deg, #D8DBE0 0%, #EFF1F5 100%);
+}
+.title-error {
+	font-size: 48px;
+	margin-bottom: 19px;
+font-weight: 500;
+line-height: 140%;
+}
+.descr-error {
+font-size: 36px;
+max-width: 533px;
+margin-bottom: 137px;
+font-weight: 500;
+line-height: 140%; 
+}
+.page-error .btn-main {
+	padding: 0 83px;
+	height: 64px;
+}
+.content-error {
+	padding-top: 164px;
+	padding-bottom: 249px;
+	position: relative;
+	z-index: 1;
+}
+.image-error {
+	right: 80px;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}

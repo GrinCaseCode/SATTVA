@@ -166,7 +166,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToScroll: 1,
 		touchThreshold: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',responsive: [
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
 		{
 			breakpoint: 992,
 			settings: {
@@ -214,7 +215,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	 	}
 	 }
 
-	 $(".btn-main_filter").click(function() {
+	 $(".btn-main_filter").click(function(e) {
+	 	e.preventDefault();
 	 	$(".nav-catalog").slideToggle(200);
 	 });
 
