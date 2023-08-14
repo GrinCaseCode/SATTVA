@@ -426,6 +426,28 @@
 	.image-error img {
 		max-width: 720px;
 	}
+	.thanks-block {
+		height: 600px;
+	}
+	.title-thanks {
+		font-size: 42px;
+		padding-bottom: 13px;
+	}
+	.descr-thanks {
+		font-size: 29px;
+		padding-bottom: 60px;
+	}
+	.thanks-block .btn-main {
+		height: 60px;
+		padding: 0 55px;
+	}
+	.page-thanks {
+		padding-top: 35px;
+		padding-bottom: 40px;
+	}
+	.block-delivery .about-block {
+		margin-right: -100px;
+	}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -661,6 +683,13 @@
 	}
 	.image-error img {
 		max-width: 584px;
+	}
+	.logos-delivery img {
+		max-height: 31px;
+		width: auto;
+	}
+	.logos-delivery {
+		padding-bottom: 25px;
 	}
 }
 
@@ -998,6 +1027,24 @@
 	.image-error img {
 		max-width: 410px;
 	}
+	.title-thanks {
+		font-size: 34px;
+	}
+	.descr-thanks {
+		font-size: 23px;
+		padding-bottom: 40px;
+	}
+	.thanks-block {
+		height: 465px;
+	}
+	.block-delivery:nth-child(even) .about-block,
+	.block-delivery .about-block {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.logos-delivery {
+		margin-top: 20px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -1171,6 +1218,31 @@
 	}
 	.content-error {
 		padding-bottom: 0;
+	}
+	.title-thanks {
+		font-size: 32px;
+	}
+	.descr-thanks {
+		font-size: 18px;
+		padding-bottom: 32px;
+	}
+	.page-delivery {
+		padding-top: 22px;
+		padding-bottom: 10px;
+	}
+	.block-delivery .about-block .btn-main {
+		margin-top: 20px;
+		height: 58px;
+		padding: 0 35px;
+	}
+	.block-delivery {
+		margin-bottom: 28px;
+	}
+	.logos-delivery img {
+		max-height: 27px;
+	}
+	.page-delivery .title-page {
+		padding-bottom: 16px;
 	}
 }
 
@@ -1352,6 +1424,27 @@
 	.descr-error {
 		font-size: 18px;
 		max-width: 300px;
+	}
+	.thanks-block {
+		height: 440px;
+		padding: 0 15px;
+	}
+	.title-thanks {
+		font-size: 28px;
+	}
+	.thanks-block .btn-main {
+		height: 55px;
+		padding: 0 45px;
+	}
+	.descr-thanks {
+		font-size: 16px;
+	}
+	.page-thanks {
+		padding-top: 30px;
+		padding-bottom: 35px;
+	}
+	.logos-delivery img {
+		max-height: 19px;
 	}
 }
 
